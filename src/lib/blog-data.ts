@@ -30,7 +30,7 @@ export const blogPosts: BlogPost[] = [
       <p>The Pomodoro Technique helps you resist all of those self-interruptions and re-train your brains to focus. Each pomodoro is a dedicated, indivisible unit of work that allows you to focus on one task at a time, which reduces the "cognitive load" on your brain.</p>
     `,
     category: 'Productivity',
-    imageUrl: 'https://placehold.co/800x400.png',
+    imageUrl: 'https://images.unsplash.com/photo-1508921340878-ba53e1f416ec?q=80&w=800&h=400&auto=format&fit=crop',
   },
   {
     slug: 'the-two-minute-rule-to-stop-procrastinating',
@@ -49,7 +49,7 @@ export const blogPosts: BlogPost[] = [
       <p>"Read before bed each night" becomes "Read one page." "Do 30 minutes of yoga" becomes "Take out my yoga mat." The idea is to make your habits as easy as possible to start. The motivation and momentum will follow.</p>
     `,
     category: 'Habits',
-    imageUrl: 'https://placehold.co/800x400.png',
+    imageUrl: 'https://images.unsplash.com/photo-1554224324-44b49429e313?q=80&w=800&h=400&auto=format&fit=crop',
   },
   {
     slug: 'digital-declutter-for-mental-clarity',
@@ -68,6 +68,6 @@ export const blogPosts: BlogPost[] = [
       <p>By taking control of your digital environment, you create space for deeper focus and a calmer mind.</p>
     `,
     category: 'Digital Wellness',
-    imageUrl: 'https://placehold.co/800x400.png',
+    imageUrl: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800&h=400&auto=format&fit=crop',
   },
 ];

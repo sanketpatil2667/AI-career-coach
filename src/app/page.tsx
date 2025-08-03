@@ -109,7 +109,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
               <Image
-                src="https://placehold.co/600x600.png"
+                src="https://images.unsplash.com/photo-1617396900799-f4ec2b43c7ae?q=80&w=600&h=600&auto=format&fit=crop"
                 alt="Portrait of the coach"
                 width={600}
                 height={600}

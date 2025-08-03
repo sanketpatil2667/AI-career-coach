@@ -129,7 +129,7 @@ export default function TestimonialGenerator() {
                     &ldquo;{quote.replace(/"/g, '')}&rdquo;
                   </blockquote>
                   <div className="flex items-center mt-4 pt-4 border-t">
-                      <Image src={`https://placehold.co/48x48.png`} alt="Client" width={48} height={48} className="rounded-full" data-ai-hint="person face futuristic" />
+                      <Image src={`https://i.pravatar.cc/48?u=${index}`} alt="Client" width={48} height={48} className="rounded-full" data-ai-hint="person face futuristic" />
                       <div className="ml-3">
                         <p className="font-semibold text-foreground">{author || `Client ${index + 1}`}</p>
                         <p className="text-sm text-muted-foreground">Verified Client</p>

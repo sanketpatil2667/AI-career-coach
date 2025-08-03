@@ -1,18 +1,7 @@
 'use server';
 
 import { z } from 'zod';
-
-export const contactFormSchema = z.object({
-  name: z.string().min(2, {
-    message: 'Name must be at least 2 characters.',
-  }),
-  email: z.string().email({
-    message: 'Please enter a valid email address.',
-  }),
-  message: z.string().min(10, {
-    message: 'Message must be at least 10 characters.',
-  }),
-});
+import { contactFormSchema } from '@/lib/schemas';
 
 export async function sendEmailAction(data: z.infer<typeof contactFormSchema>) {
     // In a real application, you would integrate an email service here.

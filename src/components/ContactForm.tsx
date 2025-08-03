@@ -16,7 +16,8 @@ import {
 } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { sendEmailAction, contactFormSchema } from '@/app/actions/send-email';
+import { sendEmailAction } from '@/app/actions/send-email';
+import { contactFormSchema } from '@/lib/schemas';
 
 
 export default function ContactForm() {

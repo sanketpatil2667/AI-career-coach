@@ -18,7 +18,7 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-5 gap-12 items-center">
             <div className="md:col-span-2 animate-in fade-in slide-in-from-left-12 duration-500">
               <Image
-                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=600&h=800&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1593453899328-6f10d8e2a134?q=80&w=600&h=800&auto=format&fit=crop"
                 alt="Portrait of the coach"
                 width={600}
                 height={800}

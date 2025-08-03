@@ -15,7 +15,7 @@ export default function Home() {
             src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?q=80&w=1920&h=1080&auto=format&fit=crop"
             alt="Futuristic background"
             fill
-            className="object-cover animate-slow-zoom"
+            className="object-cover animate-bg-pan-zoom"
             priority
             data-ai-hint="futuristic abstract"
           />

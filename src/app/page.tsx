@@ -7,7 +7,7 @@ import HomepageWelcome from '@/components/ai/HomepageWelcome';
 
 export default function Home() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col animate-in fade-in duration-500">
       {/* Hero Section */}
       <section className="bg-primary/10 py-20 md:py-32">
         <div className="container mx-auto px-4 text-center">
@@ -45,7 +45,7 @@ export default function Home() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="text-center">
+            <Card className="text-center hover:scale-105 hover:border-primary/50 transition-all duration-300">
               <CardHeader>
                 <div className="mx-auto bg-primary/10 rounded-full p-3 w-fit">
                   <BarChart className="h-8 w-8 text-primary" />
@@ -56,7 +56,7 @@ export default function Home() {
                 <p className="text-muted-foreground">Master your time, conquer procrastination, and achieve peak performance in your daily tasks.</p>
               </CardContent>
             </Card>
-            <Card className="text-center">
+            <Card className="text-center hover:scale-105 hover:border-primary/50 transition-all duration-300">
               <CardHeader>
                 <div className="mx-auto bg-primary/10 rounded-full p-3 w-fit">
                   <Briefcase className="h-8 w-8 text-primary" />
@@ -67,7 +67,7 @@ export default function Home() {
                 <p className="text-muted-foreground">Navigate career transitions, discover your professional path, and build a fulfilling work life.</p>
               </CardContent>
             </Card>
-            <Card className="text-center">
+            <Card className="text-center hover:scale-105 hover:border-primary/50 transition-all duration-300">
               <CardHeader>
                 <div className="mx-auto bg-primary/10 rounded-full p-3 w-fit">
                    <CheckCircle2 className="h-8 w-8 text-primary" />
@@ -114,7 +114,7 @@ export default function Home() {
                 width={600}
                 height={600}
                 className="rounded-lg shadow-lg"
-                data-ai-hint="professional portrait"
+                data-ai-hint="futuristic portrait"
               />
             </div>
             <div>

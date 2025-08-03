@@ -12,17 +12,19 @@ interface BlogCardProps {
 
 export default function BlogCard({ post }: BlogCardProps) {
   return (
-    <Card className="flex flex-col overflow-hidden h-full">
+    <Card className="flex flex-col overflow-hidden h-full hover:scale-105 hover:border-primary/50 transition-all duration-300">
       <CardHeader className="p-0">
         <Link href={`/blog/${post.slug}`}>
-          <Image
-            src={post.imageUrl}
-            alt={post.title}
-            width={800}
-            height={400}
-            className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105"
-            data-ai-hint="abstract background"
-          />
+          <div className="overflow-hidden">
+            <Image
+                src={post.imageUrl}
+                alt={post.title}
+                width={800}
+                height={400}
+                className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                data-ai-hint="futuristic abstract"
+            />
+          </div>
         </Link>
       </CardHeader>
       <CardContent className="p-6 flex-grow">

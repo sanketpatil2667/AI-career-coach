@@ -9,19 +9,30 @@ export default function Home() {
   return (
     <div className="flex flex-col animate-in fade-in duration-500">
       {/* Hero Section */}
-      <section className="bg-primary/10 py-20 md:py-32">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl font-bold tracking-tight text-foreground md:text-6xl font-headline">
+      <section className="relative overflow-hidden py-20 md:py-32">
+        <div className="absolute inset-0 z-[-1]">
+          <Image
+            src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?q=80&w=1920&h=1080&auto=format&fit=crop"
+            alt="Futuristic background"
+            fill
+            className="object-cover animate-slow-zoom"
+            priority
+            data-ai-hint="futuristic abstract"
+          />
+          <div className="absolute inset-0 bg-black/60"></div>
+        </div>
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <h1 className="text-4xl font-bold tracking-tight text-white md:text-6xl font-headline">
             Unlock Your Full Potential
           </h1>
-          <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
+          <p className="mt-4 max-w-2xl mx-auto text-lg text-neutral-300">
             I help you overcome obstacles, improve your productivity, and achieve your personal and professional goals.
           </p>
           <div className="mt-8 flex justify-center gap-4">
             <Button asChild size="lg">
               <Link href="/services">Our Services</Link>
             </Button>
-            <Button asChild size="lg" variant="outline">
+            <Button asChild size="lg" variant="outline" className="bg-transparent text-white border-white hover:bg-white hover:text-black">
               <Link href="/contact">Get In Touch</Link>
             </Button>
           </div>

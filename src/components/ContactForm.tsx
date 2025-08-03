@@ -16,32 +16,13 @@ import {
 } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-
-const formSchema = z.object({
-  name: z.string().min(2, {
-    message: 'Name must be at least 2 characters.',
-  }),
-  email: z.string().email({
-    message: 'Please enter a valid email address.',
-  }),
-  message: z.string().min(10, {
-    message: 'Message must be at least 10 characters.',
-  }),
-});
-
-async function sendEmailAction(data: z.infer<typeof formSchema>) {
-    'use server';
-    // In a real application, you would integrate an email service here.
-    // For this example, we'll just log the data and simulate a successful response.
-    console.log('Form data submitted:', data);
-    return { success: true, message: "Thank you for your message! I'll get back to you soon." };
-}
+import { sendEmailAction, contactFormSchema } from '@/app/actions/send-email';
 
 
 export default function ContactForm() {
   const { toast } = useToast();
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
+  const form = useForm<z.infer<typeof contactFormSchema>>({
+    resolver: zodResolver(contactFormSchema),
     defaultValues: {
       name: '',
       email: '',
@@ -51,7 +32,7 @@ export default function ContactForm() {
 
   const { isSubmitting } = form.formState;
 
-  async function onSubmit(values: z.infer<typeof formSchema>) {
+  async function onSubmit(values: z.infer<typeof contactFormSchema>) {
     const result = await sendEmailAction(values);
     
     if (result.success) {
